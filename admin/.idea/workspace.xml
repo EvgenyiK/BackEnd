@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f2a6310-baf8-4327-9b78-ca385c20b376" name="Default Changelist" comment="posts-admin">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/admin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="5f2a6310-baf8-4327-9b78-ca385c20b376" name="Default Changelist" comment="ignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Workspace/OSPanel/domains/localhost" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -46,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584292939411</updated>
-      <workItem from="1584292940683" duration="1901000" />
+      <workItem from="1584292940683" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="posts-admin">
       <created>1584293085302</created>
@@ -69,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584294542608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ignore">
+      <created>1584294905819</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584294905819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,14 +84,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="ignore" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1584294541758">
+    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1584295025901">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1024.728@0.0.1024.728" timestamp="1584294541758" />
-    <state x="104" y="96" key="Vcs.Push.Dialog.v2" timestamp="1584294561903">
+    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1024.728@0.0.1024.728" timestamp="1584295025901" />
+    <state x="292" y="118" key="FileChooserDialogImpl" timestamp="1584295297403">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="104" y="96" key="Vcs.Push.Dialog.v2/0.0.1024.728@0.0.1024.728" timestamp="1584294561903" />
+    <state x="292" y="118" key="FileChooserDialogImpl/0.0.1024.728@0.0.1024.728" timestamp="1584295297403" />
+    <state x="94" y="54" key="MergeDialog" timestamp="1584294993701">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="94" y="54" key="MergeDialog/0.0.1024.728@0.0.1024.728" timestamp="1584294993701" />
+    <state x="224" y="79" key="MultipleFileMergeDialog" timestamp="1584294993708">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="224" y="79" key="MultipleFileMergeDialog/0.0.1024.728@0.0.1024.728" timestamp="1584294993708" />
+    <state x="104" y="96" key="Vcs.Push.Dialog.v2" timestamp="1584294929908">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="104" y="96" key="Vcs.Push.Dialog.v2/0.0.1024.728@0.0.1024.728" timestamp="1584294929908" />
     <state x="321" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584293377862">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
