@@ -1,37 +1,32 @@
-package gotest
+package main
 
 import (
 	"fmt"
 )
 
-func itoa(i int) (s string) {
-	negative := i < 0
-	if negative {
-		i = 0 - i
+func Concat(slices [][]int) []int {
+	var result []int
+	for _, s := range slices {
+		result = append(result, s...)
 	}
-	if i == 0 {
-		return "0"
-	}
-	for i > 0 {
-		tmp := i % 10
-		i = i / 10
-		s = string('0'+tmp) + s
-	}
-	if negative {
-		s = "-" + s
-	}
-	return s
+	return result
 }
 
 func main() {
 	type pair struct {
-		i int
-		s string
+		s [][]int
+		r []int
 	}
 	test := []pair{
-		{0, "0"},
-		{22, "22"},
-		{32432523, "32432523"},
-		{-3, "-3"},
+		{[][]int{{1, 2}, {3, 4}}, []int{1, 2, 3, 4}},
+		{[][]int{{1, 2}, {3, 4}}, []int{1, 2, 3, 4}},
+	}
+	for _, t := range test {
+		s := t.s
+		r := t.r
+		r2 := Concat(s)
+		fmt.Printf("Test:%v\n", s)
+		fmt.Printf("Expected:%v\n", r)
+		fmt.Printf("Result:%v\n", r2)
 	}
 }
