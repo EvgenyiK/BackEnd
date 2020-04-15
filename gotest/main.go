@@ -1,32 +1,36 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func Concat(slices [][]int) []int {
-	var result []int
-	for _, s := range slices {
-		result = append(result, s...)
+type Adult interface {
+	IsAdult() bool
+	fmt.Stringer
+}
+
+type Person struct {
+	age  int
+	name string
+}
+
+func (m Person) String() string {
+	return fmt.Sprintf("%s is %d", m.name, m.age)
+}
+
+func (m Person) IsAdult() bool {
+	return m.age >= 18
+}
+
+func adultFilter(people []Adult) []Adult {
+	adults := make([]Adult, 0)
+	for _, p := range people {
+		if p.IsAdult() {
+			adults = append(adults, p)
+		}
 	}
-	return result
+	return adults
 }
 
 func main() {
-	type pair struct {
-		s [][]int
-		r []int
-	}
-	test := []pair{
-		{[][]int{{1, 2}, {3, 4}}, []int{1, 2, 3, 4}},
-		{[][]int{{1, 2}, {3, 4}}, []int{1, 2, 3, 4}},
-	}
-	for _, t := range test {
-		s := t.s
-		r := t.r
-		r2 := Concat(s)
-		fmt.Printf("Test:%v\n", s)
-		fmt.Printf("Expected:%v\n", r)
-		fmt.Printf("Result:%v\n", r2)
-	}
+	people := []Adult{Person{15, "John"}, Person{18, "Joe"}, Person{45, "Mory"}}
+	fmt.Println(adultFilter(people))
 }
