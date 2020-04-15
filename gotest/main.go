@@ -34,3 +34,5 @@ func main() {
 	people := []Adult{Person{15, "John"}, Person{18, "Joe"}, Person{45, "Mory"}}
 	fmt.Println(adultFilter(people))
 }
+
+//Joe is 18
