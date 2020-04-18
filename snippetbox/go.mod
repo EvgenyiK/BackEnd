@@ -1,3 +1,3 @@
-module github.com/EvgenyiK/BackEnd/tree/master/snippetbox
+module github.com/EvgenyiK/BackEnd/blob/master/snippetbox
 
 go 1.14
