@@ -1,3 +1,3 @@
-module github.com/EvgenyiK/BackEnd/blob/master/gotest
+module github.com/EvgenyiK/BackEnd/gotest
 
 go 1.14
