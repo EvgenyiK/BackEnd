@@ -3,17 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	c := make(chan bool)
-	m := make(map[string]string)
-
-	go func() {
-		m["1"] = "a"
-		c <- true
-	}()
-
-	m["2"] = "b"
-	<-c
-	for k, v := range m {
-		fmt.Println(k, v)
+	arr := []int{1,2,3}
+	mp := map[string]string{"qwe":"asd"}
+	ch:= make(chan int,3)
+	var st struct{
+		s string
+		i int
 	}
+
+	fmt.Printf("%p\n%v\n%#v\n\n",arr,arr,arr)
+	fmt.Printf("%p\n%v\n%#v\n\n",mp,mp,mp)
+	fmt.Printf("%p\n%v\n%#v\n\n",st,st,st)
+	fmt.Printf("%p\n%v\n%#v\n\n",ch,ch,ch)
 }
