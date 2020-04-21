@@ -1,18 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
-func main() {
-	arr := []int{1,2,3}
-	mp := map[string]string{"qwe":"asd"}
-	ch:= make(chan int,3)
-	var st struct{
-		s string
-		i int
+func main(){
+	f:=fmt.Printf
+	v:=reflect.ValueOf(f)
+	args:=[]reflect.Value{
+		reflect.ValueOf("test %d/n"),
+		reflect.ValueOf(42),
 	}
-
-	fmt.Printf("%p\n%v\n%#v\n\n",arr,arr,arr)
-	fmt.Printf("%p\n%v\n%#v\n\n",mp,mp,mp)
-	fmt.Printf("%p\n%v\n%#v\n\n",st,st,st)
-	fmt.Printf("%p\n%v\n%#v\n\n",ch,ch,ch)
+	ret:=v.Call(args) //[]reflect.Value
+	fmt.Println(ret)
 }
