@@ -30,14 +30,12 @@ section{
 h1 a{
     font-size: 36px;
     font-weight: bold;
-    background-image: url("/static/img/unnamed.png");
     background-repeat: no-repeat;
     background-position: 0px 0px;
     height: 36px;
     padding-left: 50px;
 }
 header{
-    margin-top: 10px;
     text-align: center;
     margin-bottom: 50px;
 }
